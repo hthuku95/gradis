@@ -1,4 +1,4 @@
-import { Box,Container,Typography } from "@mui/material";
+import { Box,Container,Typography,Grid,Card,CardMedia,CardContent } from "@mui/material";
 
 const About = ()=> {
     return (
@@ -28,6 +28,26 @@ const About = ()=> {
             }}>
                 Gradis is a Data Solutions Company that helps small business and charities make use of their data, with a focus on using the state of the art cloud solutions, in the most cost effective way possible. 
             </Typography>
+            <Grid container columns={18} spacing={3} height="500px">
+                <Grid item xs={18} sm={18} md={6} lg={6} xl={6}>
+                    <Card>
+                        <CardMedia></CardMedia>
+                        <CardContent></CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={18} sm={18} md={6} lg={6} xl={6}>
+                    <Card>
+                        <CardMedia></CardMedia>
+                        <CardContent></CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={18} sm={18} md={6} lg={6} xl={6}>
+                    <Card>
+                        <CardMedia></CardMedia>
+                        <CardContent></CardContent>
+                    </Card>
+                </Grid>
+            </Grid>
         </Box>
     </Container>
     )
