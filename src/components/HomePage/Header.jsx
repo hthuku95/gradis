@@ -6,7 +6,6 @@ import data from "../../img/data.png";
 import insights from "../../img/insights.png";
 import technology from "../../img/technology.png";
 
-// We provide no non-sense cost effective data solutions for SME’s and charities across the UK by leveraging state of the art Cloud solutions.
 const Header = () => {
     return (
         <Container id='section1'>
@@ -23,36 +22,86 @@ const Header = () => {
                 }}>
                     GRADIS
                 </Typography>
-                <Typography variant="h5" sx={{
+                <Typography variant="body1" sx={{
                     color: 'custom.second',
                     textAlign: 'center',
-                    width: '60%',
+                    width: '75%',
                     margin: '0 auto',
                     mb: 4 
                 }}>
-                    Gradis is a Data Solutions Company that helps small business and charities make use of their data, with a focus on using the state of the art cloud solutions, in the most cost effective way possible. 
+                    We provide no non-sense cost effective data solutions for SME’s and charities across the UK by leveraging state of the art Cloud solutions. 
                 </Typography>
-                <Grid container columns={18} spacing={3} height="500px">
+                <Grid container columns={18} spacing={3} height="auto" sx={{
+                    mb:4
+                }}>
                     <Grid item xs={18} sm={18} md={6} lg={6} xl={6}>
                         <Card>
-                            <CardContent></CardContent>
-                            <CardMedia></CardMedia>  
+                            <CardContent>
+                                <Box sx={{
+                                    display:'flex',
+                                    justifyContent:'center'
+                                }}>
+                                    <Typography variant="h4" sx={{
+                                        color:'custom.third'
+                                    }}>
+                                        Data
+                                    </Typography>
+                                </Box>
+                            </CardContent>
+                            <CardMedia
+                                sx={{
+                                    height:300
+                                }}
+                                image={data}
+                            ></CardMedia>  
                         </Card>
                     </Grid>
                     <Grid item xs={18} sm={18} md={6} lg={6} xl={6}>
                         <Card>
-                            <CardContent></CardContent>
-                            <CardMedia></CardMedia>
+                            <CardContent>
+                                <Box sx={{
+                                    display:'flex',
+                                    justifyContent:'center'
+                                }}>
+                                    <Typography variant="h4" sx={{
+                                        color: 'custom.third'
+                                    }}>
+                                        Insights
+                                    </Typography>
+                                </Box>
+                            </CardContent>
+                            <CardMedia
+                                sx={{
+                                    height:300
+                                }}
+                                image={insights}
+                            ></CardMedia>
                         </Card>
                     </Grid>
                     <Grid item xs={18} sm={18} md={6} lg={6} xl={6}>
                         <Card>
-                            <CardContent></CardContent>
-                            <CardMedia></CardMedia>
+                            <CardContent>
+                                <Box sx={{
+                                    display:'flex',
+                                    justifyContent:'center'
+                                }}>
+                                    <Typography variant="h4" sx={{
+                                        color:'custom.third'
+                                    }}>
+                                        Technology
+                                    </Typography>
+                                </Box>
+                            </CardContent>
+                            <CardMedia
+                                sx={{
+                                    height:300
+                                }}
+                                image={technology}
+                            ></CardMedia>
                         </Card>
                     </Grid>
                 </Grid>
-                <Button variant="contained" mt={8} size="large" sx={{
+                <Button variant="contained" size="large" sx={{
                         color: 'custom.white',
                         width: '300px',
                         p:1,
