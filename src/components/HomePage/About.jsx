@@ -1,55 +1,53 @@
-import { Box,Container,Typography,Grid,Card,CardMedia,CardContent } from "@mui/material";
+import { Box,Container,Typography,Grid,Button } from "@mui/material";
+import HeaderSvg from '../../svg/header.svg';
+
+const styles = {
+    svg: {
+      width: '100%',
+      height: '100%',
+    },
+  };
 
 const About = ()=> {
     return (
-    <Container id='section2' sx={{
-        pt: 8,
-        mb: 12
-    }}>
-        <Box sx={{ 
-                justifyContent: 'center',
-                textAlign:'center' 
-            }}>
-            <Typography variant="h2" sx={{ 
-                textAlign:'center',
-                color: 'custom.third',
-                mb: 2,
-                mt: 2,
-                borderBottom: `2px solid custom.third`,
-            }}>
-                About Us
-            </Typography>
-            <Typography variant="h5" sx={{
-                color: 'custom.second',
-                textAlign: 'center',
-                width: '60%',
-                margin: '0 auto',
-                mb: 4 
-            }}>
-                Gradis is a Data Solutions Company that helps small business and charities make use of their data, with a focus on using the state of the art cloud solutions, in the most cost effective way possible. 
-            </Typography>
-            <Grid container columns={18} spacing={3} height="500px">
-                <Grid item xs={18} sm={18} md={6} lg={6} xl={6}>
-                    <Card>
-                        <CardMedia></CardMedia>
-                        <CardContent></CardContent>
-                    </Card>
+        <Container id='section2'>
+            <Grid container spacing={2} columns={16}>
+                <Grid item xs={16} sm={16} md={8} lg={8} xl={8} height="100vh" sx={{
+                }}>
+                    <Box sx={{ marginTop: 12}}>
+                        <Typography variant="h2" sx={{
+                            color:'custom.third'
+                            }} gutterBottom={true}>
+                            About Us
+                        </Typography>
+                        <Typography variant="body1" sx={{
+                            color: 'custom.second',
+                            mb: 6
+                            }}
+                            >
+                            Gradis is a Data Solutions Company that helps small business and charities make use of their data, with a focus on using the state of the art cloud solutions, in the most cost effective way possible. 
+                            
+                        </Typography>
+                        <Button variant="contained" mt={8} size="large" sx={{
+                                color: 'custom.white',
+                                width: '300px',
+                                p:1,
+                                backgroundColor: 'custom.third',
+                                '&:hover': {
+                                    backgroundColor: 'custom.third',
+                                },
+                                fontSize: '30px'
+                            }}>
+                                Read More
+                        </Button>
+                    </Box>
                 </Grid>
-                <Grid item xs={18} sm={18} md={6} lg={6} xl={6}>
-                    <Card>
-                        <CardMedia></CardMedia>
-                        <CardContent></CardContent>
-                    </Card>
-                </Grid>
-                <Grid item xs={18} sm={18} md={6} lg={6} xl={6}>
-                    <Card>
-                        <CardMedia></CardMedia>
-                        <CardContent></CardContent>
-                    </Card>
+            
+                <Grid item xs={16} sm={16} md={8} lg={8} xl={8} height="100vh">
+                    <img src={HeaderSvg} alt="About Image in SVG format" style={styles.svg}/>
                 </Grid>
             </Grid>
-        </Box>
-    </Container>
+        </Container>
     )
 }
 
