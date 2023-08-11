@@ -11,12 +11,11 @@ const Contact = () => {
                 <Grid item xs={18} sm={18} md={6} lg={6} xl={6}>
                     <Box sx={{
                         display:'flex',
-                        justifyContent:'center'
+                        justifyContent:'center',
+                        mb:4,
+                        mt:4
                     }}>
-                        <Typography variant="h4" sx={{
-                            mb:4,
-                            mt:8
-                        }}>
+                        <Typography variant="h5">
                             GRADIS LIMITED
                         </Typography>
                     </Box>
@@ -24,12 +23,11 @@ const Contact = () => {
                 <Grid item xs={18} sm={18} md={6} lg={6} xl={6}>
                     <Box sx={{
                             display:'flex',
-                            justifyContent:'center'
+                            justifyContent:'center',
+                            mb:4,
+                            mt:4
                         }}>
-                            <Typography variant="h4" sx={{
-                                mb:4,
-                                mt:8
-                            }}>
+                            <Typography variant="h5">
                                 CONTACT
                             </Typography>
                         </Box>                
@@ -37,12 +35,11 @@ const Contact = () => {
                 <Grid item xs={18} sm={18} md={6} lg={6} xl={6}>
                     <Box sx={{
                             display:'flex',
-                            justifyContent:'center'
+                            justifyContent:'center',
+                            mb:4,
+                            mt:4
                         }}>
-                            <Typography variant="h4" sx={{
-                                mb:4,
-                                mt:8
-                            }}>
+                            <Typography variant="h5">
                                 RESOURCES
                             </Typography>
                         </Box>                  
