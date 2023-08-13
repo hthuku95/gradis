@@ -12,9 +12,10 @@ const About = ()=> {
     return (
         <Container id='section2'>
             <Grid container spacing={2} columns={16}>
-                <Grid item xs={16} sm={16} md={8} lg={8} xl={8} height="100vh" sx={{
-                }}>
-                    <Box sx={{ marginTop: 12}}>
+                <Grid item xs={16} sm={16} md={8} lg={8} xl={8} height="100vh">
+                    <Box sx={{
+                        mt:12
+                    }}>
                         <Typography variant="h2" sx={{
                             color:'custom.third'
                             }} gutterBottom={true}>
