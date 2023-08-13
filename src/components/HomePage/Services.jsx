@@ -1,10 +1,12 @@
 import { Box,Container,Typography,Grid,Button } from "@mui/material";
+import AzureSVG from '../../svg/azure.svg';
+import DatabricksSVG from '../../svg/databricks.svg';
+import ExcelSVG from '../../svg/excel.svg';
+import PowerBISVG from '../../svg/powerbi.svg';
 
 const Services = () => {
     return (
-        <Box id='section3' sx={{
-            mb:20
-        }}>
+        <Box id='section3'>
             <Box sx={{
                 display:'flex',
                 justifyContent:'center',
@@ -139,6 +141,56 @@ const Services = () => {
                     </Grid>  
                 </Box>
             </Container>
+            </Box>
+            <Box sx={{
+                pt:4,
+                pm:4,
+                backgroundColor:'custom.white'
+            }}>
+                <Container>
+                    <Grid container spacing={3} columns={15}>
+                        <Grid item xs={15} sm={15} md={5} lg={3} xl={3}>
+                            <Box sx={{
+                                pt:4,
+                                pb:4
+                            }}>
+                                <img src={AzureSVG} alt="AzureSVG"/>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={15} sm={15} md={5} lg={3} xl={3}>
+                            <Box sx={{
+                                pt:4,
+                                pb:4
+                            }}>
+                                <img src={PowerBISVG} alt="PowerBISVG"/>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={15} sm={15} md={5} lg={3} xl={3}>
+                            <Box sx={{
+                                pt:4,
+                                pb:4
+                            }}>
+                                <img src={DatabricksSVG} alt="DatabricsSVG"/>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={15} sm={15} md={5} lg={3} xl={3}>
+                            <Box sx={{
+                                pt:4,
+                                pb:4
+                            }}>
+                                <img src={ExcelSVG} alt="ExcelSVG"/>
+                            </Box>
+                        </Grid>
+                        <Grid item xs={15} sm={15} md={5} lg={3} xl={3}>
+                            <Box sx={{
+                                pt:4,
+                                pm:4
+                            }}>
+                                <img src={ExcelSVG} alt="ExcelSVG"/>
+                            </Box>
+                        </Grid>
+                    </Grid>
+                </Container>
             </Box>
         </Box>
     )
