@@ -4,6 +4,13 @@ import DatabricksSVG from '../../svg/databricks.svg';
 import ExcelSVG from '../../svg/excel.svg';
 import PowerBISVG from '../../svg/powerbi.svg';
 
+const styles = {
+    svg: {
+      width: '50%',
+      height: '50%',
+    },
+  };
+
 const Services = () => {
     return (
         <Box id='section3'>
@@ -52,7 +59,7 @@ const Services = () => {
                             <Button variant="contained" size="large" sx={{
                                 color: 'custom.white',
                                 width: '100%',
-                                p:1,
+                                p:2,
                                 backgroundColor: 'custom.third',
                                 '&:hover': {
                                     backgroundColor: 'custom.third',
@@ -67,7 +74,7 @@ const Services = () => {
                             <Button variant="contained" size="large" sx={{
                                 color: 'custom.white',
                                 width: '100%',
-                                p:1,
+                                p:2,
                                 backgroundColor: 'custom.third',
                                 '&:hover': {
                                     backgroundColor: 'custom.third',
@@ -82,7 +89,7 @@ const Services = () => {
                             <Button variant="contained" size="large" sx={{
                                 color: 'custom.white',
                                 width: '100%',
-                                p:1,
+                                p:2,
                                 backgroundColor: 'custom.third',
                                 '&:hover': {
                                     backgroundColor: 'custom.third',
@@ -97,7 +104,7 @@ const Services = () => {
                             <Button variant="contained" size="large" sx={{
                                 color: 'custom.white',
                                 width: '100%',
-                                p:1,
+                                p:2,
                                 backgroundColor: 'custom.third',
                                 '&:hover': {
                                     backgroundColor: 'custom.third',
@@ -112,7 +119,7 @@ const Services = () => {
                             <Button variant="contained" size="large" sx={{
                                 color: 'custom.white',
                                 width: '100%',
-                                p:1,
+                                p:2,
                                 backgroundColor: 'custom.third',
                                 '&:hover': {
                                     backgroundColor: 'custom.third',
@@ -127,7 +134,7 @@ const Services = () => {
                             <Button variant="contained" size="large" sx={{
                                 color: 'custom.white',
                                 width: '100%',
-                                p:1,
+                                p:2,
                                 backgroundColor: 'custom.third',
                                 '&:hover': {
                                     backgroundColor: 'custom.third',
@@ -144,49 +151,63 @@ const Services = () => {
             </Box>
             <Box sx={{
                 pt:4,
-                pm:4,
+                pb:4,
+                mt:8,
                 backgroundColor:'custom.white'
             }}>
-                <Container>
+                <Container sx={{
+                    pt:2,
+                    pb:2
+                }}>
                     <Grid container spacing={3} columns={15}>
                         <Grid item xs={15} sm={15} md={5} lg={3} xl={3}>
                             <Box sx={{
                                 pt:4,
-                                pb:4
+                                pb:4,
+                                display: "flex",
+                                justifyContent: "center"
                             }}>
-                                <img src={AzureSVG} alt="AzureSVG"/>
+                                <img src={AzureSVG} alt="AzureSVG" style={styles.svg}/>
                             </Box>
                         </Grid>
                         <Grid item xs={15} sm={15} md={5} lg={3} xl={3}>
                             <Box sx={{
                                 pt:4,
-                                pb:4
+                                pb:4,
+                                display: "flex",
+                                justifyContent: "center"
                             }}>
-                                <img src={PowerBISVG} alt="PowerBISVG"/>
+                                <img src={PowerBISVG} alt="PowerBISVG" style={styles.svg}/>
                             </Box>
                         </Grid>
                         <Grid item xs={15} sm={15} md={5} lg={3} xl={3}>
                             <Box sx={{
                                 pt:4,
-                                pb:4
+                                pb:4,
+                                display: "flex",
+                                justifyContent: "center"
                             }}>
-                                <img src={DatabricksSVG} alt="DatabricsSVG"/>
+                                <img src={DatabricksSVG} alt="DatabricsSVG" style={styles.svg}/>
                             </Box>
                         </Grid>
                         <Grid item xs={15} sm={15} md={5} lg={3} xl={3}>
                             <Box sx={{
                                 pt:4,
-                                pb:4
+                                pb:4,
+                                display: "flex",
+                                justifyContent: "center"
                             }}>
-                                <img src={ExcelSVG} alt="ExcelSVG"/>
+                                <img src={ExcelSVG} alt="ExcelSVG" style={styles.svg}/>
                             </Box>
                         </Grid>
                         <Grid item xs={15} sm={15} md={5} lg={3} xl={3}>
                             <Box sx={{
                                 pt:4,
-                                pm:4
+                                pb:4,
+                                display: "flex",
+                                justifyContent: "center"
                             }}>
-                                <img src={ExcelSVG} alt="ExcelSVG"/>
+                                <img src={ExcelSVG} alt="ExcelSVG" style={styles.svg}/>
                             </Box>
                         </Grid>
                     </Grid>
