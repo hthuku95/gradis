@@ -3,6 +3,7 @@ import AzureSVG from '../../svg/azure.svg';
 import DatabricksSVG from '../../svg/databricks.svg';
 import ExcelSVG from '../../svg/excel.svg';
 import PowerBISVG from '../../svg/powerbi.svg';
+import SalesforceSVG from '../../svg/salesforce.svg';
 
 const styles = {
     svg: {
@@ -207,7 +208,7 @@ const Services = () => {
                                 display: "flex",
                                 justifyContent: "center"
                             }}>
-                                <img src={ExcelSVG} alt="ExcelSVG" style={styles.svg}/>
+                                <img src={SalesforceSVG} alt="SalesforceSVG" style={styles.svg}/>
                             </Box>
                         </Grid>
                     </Grid>
